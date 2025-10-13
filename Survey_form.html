@@ -2,48 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meradta name="viewport" content="width=device-width, initial-scale=.0">
-    <titlrade>Survey Form</title>    <link rel="stylesheet" href="surveyform.css">
-</head><bodrady>
-    <h1id="traditle">UC Survey Form</h1>
-    <p id="description">This survey is for taking your college status thank you!</p>
+    <meta name="viewport" content="width=device-width, initial-scale=.0">
+    <title>Survey Form</title>    <link rel="stylesheet" href="surveyform.css">
+</head>
 
+<body>
+    <h1 id="title">UC Survey Form</h1>
+    <p id="description">This survey is for taking your college status thank you!</p>
     <form id="survey-form">
             <fieldset id="form">
-                    <label id="name-label">
-                        Enter your name: <input type="text" id="name" placeholder="Name" required>
-                    </label>
-                    
-                    <label id="email-label">
-                        Enter Email: <input type="email" id="email" placeholder="email" required>
-                    </label>
-                    
-                    <label id="number-label">
-                        Enter number: <input type="number" id="number" placeholder="Number">
+
+                        <label id="name-label">Enter your name:</label>
+                            <input type="text" id="name" placeholder="Name" class="inputs" required>
+
+                        <label id="email-label">Enter Email:</label>
+                            <input type="email" id="email" placeholder="Email" class="inputs" required>
+
+                        <label id="number-label"> Enter Age: </label>
+                            <input type="number" id="number" placeholder="Age" min="18"  max="30" class="inputs">
+
+                        <label id="gender" class="gen"> Gender: </label>
+                        <label id="gender-rad"> 
+                            <input type="radio" name="rad1" value="m" class="gen" id="m"> Male
+                            <input type="radio" name="rad1" value="f" class="gen" id="m"> Female
+                        </label>
+
+                        <label id="yr-label">
+                            <p class="yr">What year are you?:</p>
+                        </label>
+
+                        <label id="1">
+                            <input class="inline" type="radio" value="yr1" name="rad"> 1st year
+                        </label>
+
+                        <label id="2">
+                            <input class="inline" type="radio" value="yr2" name="rad"> 2nd year
+                        </label>
+
+                        <label id="3">
+                            <input class="inline" type="radio" value="yr3" name="rad"> 3rd year
+                        </label>
+
+                        <label id="4">
+                            <input class="inline" type="radio" value="yr4" name="rad"> 4th year
+                        </label>
+
+
+                <label id="slct" class="opt">Select your course:</label>
+
+                <select name="select" id="dropdown" class="opt">
+                    <option value="0" class="opt" >(select an option)</option>
+                    <option value="1" class="opt">CITCS</option>
+                    <option value="2" class="opt">CAS</option>
+                    <option value="3" class="opt">CTE</option>
+                    <option value="4" class="opt">CEA</option>
+                </select>
+
+                <label id="answer" > Which areas do you think the school does well in?(Check all that apply)</label>
+                    <input type="checkbox" name="chck" class="ans" value="yes"> Quality of teaching<br>
+                    <input type="checkbox" name="chck" class="ans" value="yes"> School environment<br>
+                    <input type="checkbox" name="chck" class="ans" value="yes"> Extracurricular activities<br>
+                    <input type="checkbox" name="chck" class="ans" value="yes"> Campus cleanliness<br>
+                    <input type="checkbox" name="chck" class="ans" value="yes"> Learning sources<br>
+
+                <label id="answer2" > What would you like to see improved?(Check all that apply)</label>
+                    <input type="checkbox" name="chck" class="ans" value="yes"> Classrooms and facilities<br>
+                    <input type="checkbox" name="chck" class="ans" value="yes"> Wi-Fi connection and technology access<br>
+                    <input type="checkbox" name="chck" class="ans" value="yes"> Cleanliness and maintenance<br>
+                    <input type="checkbox" name="chck" class="ans" value="yes"> School events and programs<br>
+                    <input type="checkbox" name="chck" class="ans" value="yes"> Parking or transportation access<br>
+                
+
+                <label id="txtarea">
+                    <textarea name="txt" id="tt" placeholder="Provide here your feedback <3" class="desc"></textarea>
                 </label>
 
-                    <p class="yr">What year are you?:</p>
-                <div class="check">
-                        <input class="inline" type="radio" value="yr1" name="rad"> 1st year
-                        <input class="inline" type="radio" value="yr2" name="rad"> 2nd year
-                        <input class="inline" type="radio" value="yr3" name="rad"> 3rd year
-                        <input class="inline" type="radio" value="yr4" name="rad"> 4th year
-                </div>
+                <input type="submit" id="submit">
 
-                Course:<select name="selectdd" id="dropdown">
-                    <option value="">(select)</option>
-                    <option value="">hello</option>
-                    <option value="">hello</option>
-                </select>
-                <input type="radio" name="rad1" value="">
-                <input type="radio" name="rad1" value="">
-                
-                
-                        <textarea name="" id="">
-                        </textarea>
             </fieldset>
-
-        <input type="submit" id="submit">
     </form>
 </body>
 </html>
