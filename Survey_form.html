@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=.0">
     <title>Survey Form</title>    <link rel="stylesheet" href="surveyform.css">
 </head>
-
 <body>
     <h1 id="title">UC Survey Form</h1>
     <p id="description">This survey is for taking your college status thank you!</p>
-    <form id="survey-form">
+    <form id="survey-form" action="index.html">
             <fieldset id="form">
 
                         <label id="name-label">Enter your name:</label>
-                            <input type="text" id="name" placeholder="Name" class="inputs" required>
+                            <input type="text" id="name" placeholder="Name" class="inputs" >
 
                         <label id="email-label">Enter Email:</label>
-                            <input type="email" id="email" placeholder="Email" class="inputs" required>
+                            <input type="email" id="email" placeholder="Email" class="inputs" >
 
                         <label id="number-label"> Enter Age: </label>
                             <input type="number" id="number" placeholder="Age" min="18"  max="30" class="inputs">
@@ -77,7 +76,7 @@
                     <textarea name="txt" id="tt" placeholder="Provide here your feedback <3" class="desc"></textarea>
                 </label>
 
-                <input type="submit" id="submit">
+                <input type="submit" id="submit"  value="Submit">
 
             </fieldset>
     </form>
