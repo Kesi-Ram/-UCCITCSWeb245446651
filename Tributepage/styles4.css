@@ -37,7 +37,7 @@ img{
     text-transform: capitalize;
     font-size: x-large;
 }
-#img-caption, #tribute-info{
+#img-caption{
     font-size: larger;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: justify;
