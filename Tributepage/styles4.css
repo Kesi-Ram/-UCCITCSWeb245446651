@@ -21,7 +21,7 @@ img{
     width: 1000px;
     margin: auto;
     border-radius: 10px 10px 10px 10px;
-    height: 80vh;
+    height: 85vh;
 }
 #imigee{
     padding: 20px;
@@ -37,9 +37,17 @@ img{
     text-transform: capitalize;
     font-size: x-large;
 }
-#img-caption, #tribute-info{
+#img-caption, #tribute-qoute{
     font-size: larger;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: justify;
     padding: 0 90px;
+}
+#tribute-qoute{
+    font-size: medium;
+    margin-top: 20px;
+    font-style: italic;
+}
+#img-p{
+    line-height: 2;
 }
