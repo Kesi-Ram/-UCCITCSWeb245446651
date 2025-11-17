@@ -1,0 +1,45 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img{
+    display: block;
+}
+#title{
+    text-align: center;
+    text-transform: uppercase;
+}
+#image{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border: 2px black solid;
+    border-radius: 3px 3px 2px 2px;
+    width: 250px
+}
+#img-div{
+    background-color: gainsboro;
+    width: 1000px;
+    margin: auto;
+    border-radius: 10px 10px 10px 10px;
+    height: 80vh;
+}
+#imigee{
+    padding: 20px;
+    margin-bottom: 10px;
+}
+#name{
+    height: 20px;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#desc{
+    font-family: monospace;
+    text-transform: capitalize;
+    font-size: x-large;
+}
+#img-caption, #tribute-info{
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    padding: 0 90px;
+}
